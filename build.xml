@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="apple_stubs" default="stubs">
+	<property name="src" value="src"/>
+	<property name="build" value="ant_build"/>
+	<property name="package" value="apple_stubs"/>
+	<property name="min_jdk" value="1.5"/>
+
+	<target name="clean" description="Clean up after a build">
+		<delete dir="${build}"/>
+		<delete file="${package}.jar"/>
+	</target>
+
+	<target name="stubs" description="Build the Apple stubs" depends="clean">
+		<mkdir dir="${build}"/>
+
+		<!-- Compile the code. -->
+		<javac srcdir="${src}" destdir="${build}" includes="com/apple/**" debug="no"
+			optimize="yes" target="${min_jdk}" source="${min_jdk}" deprecation="true"
+			includeantruntime="no">
+			<compilerarg value="-Xlint:all"/>
+			<compilerarg value="-Xlint:-serial"/>
+		</javac>
+
+		<!-- Create the jar file. -->
+		<jar destfile="${package}.jar" basedir="${build}" duplicate="fail"/>
+	</target>
+</project>
