@@ -23,5 +23,8 @@
 
 		<!-- Create the jar file. -->
 		<jar destfile="${package}.jar" basedir="${build}" duplicate="fail"/>
+
+		<!-- Create the source jar file. -->
+		<jar destfile="${package}-src.jar" basedir="${src}" duplicate="fail"/>
 	</target>
 </project>
