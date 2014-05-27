@@ -16,7 +16,7 @@
 		<!-- Compile the code. -->
 		<javac srcdir="${src}" destdir="${build}" includes="com/apple/**" debug="no"
 			optimize="yes" target="${min_jdk}" source="${min_jdk}" deprecation="true"
-			includeantruntime="no">
+			includeantruntime="no" fork="yes">
 			<compilerarg value="-Xlint:all"/>
 			<compilerarg value="-Xlint:-serial"/>
 		</javac>
