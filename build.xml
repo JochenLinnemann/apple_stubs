@@ -8,6 +8,7 @@
 	<target name="clean" description="Clean up after a build">
 		<delete dir="${build}"/>
 		<delete file="${package}.jar"/>
+		<delete file="${package}-src.jar"/>
 	</target>
 
 	<target name="stubs" description="Build the Apple stubs" depends="clean">
