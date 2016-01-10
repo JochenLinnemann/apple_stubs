@@ -199,9 +199,9 @@ public class Application {
 	 * User initiated Cmd-Q, logout, restart, or shutdown requests will effectively "kill -KILL"
 	 * your application. This call has no effect on Mac OS X versions prior to 10.6.
 	 *
-	 * @see <a
-	 *      href="http://developer.apple.com/mac/library/documentation/cocoa/reference/foundation/Classes/NSProcessInfo_Class">NSProcessInfo
-	 *      class references</a> for more information about Sudden Termination.
+	 * @see <a href=
+	 *      "http://developer.apple.com/mac/library/documentation/cocoa/reference/foundation/Classes/NSProcessInfo_Class">
+	 *      NSProcessInfo class references</a> for more information about Sudden Termination.
 	 * @see Application#disableSuddenTermination()
 	 * @since Java for Mac OS X 10.6 Update 3
 	 * @since Java for Mac OS X 10.5 Update 8
@@ -216,9 +216,9 @@ public class Application {
 	 * your application has unsaved state, and may not be terminated without notification. This call
 	 * has no effect on Mac OS X versions prior to 10.6.
 	 *
-	 * @see <a
-	 *      href="http://developer.apple.com/mac/library/documentation/cocoa/reference/foundation/Classes/NSProcessInfo_Class">NSProcessInfo
-	 *      class references</a> for more information about Sudden Termination.
+	 * @see <a href=
+	 *      "http://developer.apple.com/mac/library/documentation/cocoa/reference/foundation/Classes/NSProcessInfo_Class">
+	 *      NSProcessInfo class references</a> for more information about Sudden Termination.
 	 * @see Application#enableSuddenTermination()
 	 * @since Java for Mac OS X 10.6 Update 3
 	 * @since Java for Mac OS X 10.5 Update 8
